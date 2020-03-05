@@ -1,7 +1,12 @@
 # libproj4
 
 WARNING: this is not an active project, but an attempt at preserving the content
-of http://libproj4.maptools.org/
+of http://libproj4.maptools.org/ and
+https://karczmarczuk.users.greyc.fr/TEACH/InfoGeo/Work/libproj4.3_20081120.tar.bz2
+
+This repository contains 2 versions:
+* tag REL_050319 for a release dating from 2005/03/19, coming from http://libproj4.maptools.org/dl/lbp4_050319S.tar.gz
+* tag v4.3 for a release dating from 2008/11/20 (latest known, current "master"), coming from https://karczmarczuk.users.greyc.fr/TEACH/InfoGeo/Work/libproj4.3_20081120.tar.bz2
 
 libproj4 was forked from https://github.com/OSGeo/PROJ (at that time under CVS),
 known as PROJ.4, circa 2002 by Gerald I. Evenden.
