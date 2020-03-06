@@ -1,0 +1,24 @@
+Program 'geodesic' is a user friendly command driven method to determine
+various properties of geodesics or "Great Circle" paths.
+
+---------------------------------------
+
+REQUIREMENT: static or dynamic library "libproject.*" must be install on
+host system a path recognizable to the loader---typically /usr/local/lib.
+Similarly, file "project.h" must be similarly installed.
+
+---------------------------------------
+
+NOTICE:
+
+Command line option processing is done with the assistance of
+program 'gengetopt' (see
+
+http://www.gnu.org/software/gengetopt/gengetopt.html#dir
+
+).  Any changes to file src/geodesic.ggo will need to be processed
+by:
+
+gengetopt --input=geodesic.ggo --file-name=geodesic_cmd
+
+before recompiling/linking the program.

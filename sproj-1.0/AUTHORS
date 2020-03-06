@@ -1,0 +1,6 @@
+All software within the sproj distribution tar is coded by:
+
+Gerald I. Evenden
+
+except for the machine generated code in file sproj_cmd.c and
+sproj_cmd.h.

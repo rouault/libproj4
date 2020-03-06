@@ -1,0 +1,10 @@
+Program 'sproj' is a cartographic projection filter program.
+
+---------------------------------------
+
+REQUIREMENT: static or dynamic library "libproject.*" must be install on
+host system a path recognizable to the loader---typically /usr/local/lib.
+Similarly, file "project.h" must be similarly installed.
+
+---------------------------------------
+

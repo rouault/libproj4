@@ -1,0 +1,70 @@
+#
+# Copyright (c) 2009  Gerald I. Evenden
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+# IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# To regenerate the file sproj_cmd.c and sproj_cmd.h do:
+#
+#  gengetopt --input=sproj.ggo --file-name=sproj_cmd --unamed-opts
+#
+
+package "Basic Cartographic Projection Computer"
+
+version "v. 1.0"
+
+purpose "Compute forward or inverse cartographic projections"
+
+usage "sproj [OPTIONS] [projection options]"
+
+description "A program to compute forward or inverse cartographic \
+projection.\n
+$Id: sproj.ggo,v 1.3 2009/05/16 20:35:32 gie Exp gie $\n"
+
+option "inverse" I "Inverse projection" flag off
+#option "infile" i "input file" string typestr="filename" optional
+#option "outfile" o "output file"  string typestr="filename" optional
+option "revin" r "reverse order of input to phi-lam or y-x" flag off
+option "revout" R "reverse order of output to y-x or phi-lam" flag off
+#option "select" S "projection control options file" typestr="filename" optional
+option "format" f "output format" string typestr="C_format_str" optional
+	details="for forward projection use standard floating point opertation,
+for inverse use DMS or colon delimited, two or three field format"
+option "list" l "list options" values="proj","ellps","pms","units" enum
+	default="proj"
+	optional details="\nList option values for\n
+	\"proj\": projection list, short form\n
+	\"ellps\": list of elliptical figures and their names\n
+	\"pms\": list of prime meridian systems\n
+	\"units\": list of units conversion for Cartesian coordinated."
+option "longproj" P "detail projection list" string typestr="proj_id"
+	argoptional optional
+#option "scale" s "scale Cartesian" double optional
+
+# $Log: sproj.ggo,v $
+# Revision 1.3  2009/05/16 20:35:32  gie
+# added generation comments and line spacing to
+# version output line.
+#
+# Revision 1.2  2009/05/16 19:37:40  gie
+# put revision code in comment line
+#
+# Revision 1.1  2009/05/16 14:48:23  gie
+# Initial revision
+#
