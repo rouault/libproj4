@@ -1,0 +1,16 @@
+
+Library: libproject
+
+--------------------------
+
+Library of cartographic projection and geodesic procedures that is an
+revision of the libproj4 library with added, non-projection procedures.
+This is preliminary proto of library to replace libproj4 and previous
+versions of "proj" by G.I. Evenden.
+
+
+Programmatic usage is described by Doxygen distribution.  Usage, and
+mathematic desciption of projections and other contents is by pdf files.
+Installation of this directory only involves /lib and /include material.
+
+---------------------------

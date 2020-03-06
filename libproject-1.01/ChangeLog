@@ -1,0 +1,20 @@
+2009-03-07 2.0 Is the initial release of the library.  Release 1.0 was
+	very preliminary and is not compatible with this release.
+2009-05-06 2.1.0 Full release of projection as well as geodesic software
+
+2009-05-17 libproject-1.0.tar.gz Full release.
+
+2009-05-19 Corrected proj=pconic forward equation in proj_sconics.c.
+
+2009-05-20 proj_init corrected for caseless projection name search
+		and units name search.
+
+2009-05-20 Added Braun Stereographic conic projection in proj_sconics.c.
+
+2009-05-22 Corrected and completed seversal of the projections in
+		proj_sconics.c.
+
+2009-05-22 Corrected initialization which apparently was not needed on
+		Linux systems but failed with other mallocs.  Also set unit radius
+		as default when ellps, R or a not specified.  proj_ell_set.c,
+		proj_init.c and several projection files affected.
